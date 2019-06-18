@@ -124,6 +124,8 @@ json_parse_status_e json_parse_string(json_obj_t* json, const char* str, int len
       state = JSON_IDLE;
     }
   }
+
+  return JSON_VALID;
 }
 
 void json_clean(json_obj_t* json)
