@@ -24,7 +24,7 @@ char tmp_val[32];
 //Test pushing data to Fifo
 TEST(JSONTest, parse)
 {
-  sprintf(json_string, "{ \"%s\": \"%s\", \"%s\" : %s , \"%s\" : %s , \"%s\" : %s  }", keys[0], vals[0],keys[1], vals[1],keys[2], vals[2],keys[3], vals[3] );
+  sprintf(json_string, "{ \"%s\": \"%s\", \"%s\" :%s,\"%s\" :%s , \"%s\" : %s  }", keys[0], vals[0],keys[1], vals[1],keys[2], vals[2],keys[3], vals[3] );
 
   json_parse_string(&obj, json_string, strlen(json_string));
 
