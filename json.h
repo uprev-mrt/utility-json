@@ -6,11 +6,16 @@
   */
 
 #pragma once
+/*Code-Block-Includes-----------------------------------------------------------------------*/
+
+
 #include <stdint.h>
 #include <stdbool.h>
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
+
+/*Code-Block-Typedefs-----------------------------------------------------------------------*/
 
 
 typedef enum {
@@ -40,7 +45,10 @@ typedef struct json_obj{
   int mAttributeCount;
 }json_obj_t;
 
+/*Code-Block-Functions----------------------------------------------------------------------*/
+
 
 json_parse_status_e json_parse_string(json_obj_t* json, const char* str, int len);
 
 void json_clean(json_obj_t* json);
+/*Code-Block-End----------------------------------------------------------------------------*/

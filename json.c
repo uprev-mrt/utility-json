@@ -5,8 +5,11 @@
   *@date 06/5/2019
   */
 
+/*Code-Block-Includes-----------------------------------------------------------------------*/
+
 #include "json.h"
 
+/*Code-Block-Functions----------------------------------------------------------------------*/
 
 
 json_parse_status_e json_parse_string(json_obj_t* json, const char* str, int len)
@@ -144,3 +147,5 @@ void json_clean(json_obj_t* json)
     free(json->mAttributes);
   }
 }
+
+/*Code-Block-End----------------------------------------------------------------------------*/
