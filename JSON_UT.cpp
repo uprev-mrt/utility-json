@@ -44,6 +44,11 @@ TEST(JSONTest, parse)
   }
 }
 
+TEST(JSONTest,cleanup)
+{
+  json_clean(&obj);
+}
+
 
 
 
